@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Dev - O melhor café para programadores</title>
+    
+    <style>
+        /* O CSS deixa o site bonito e com cara de cafeteria */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf8f2;
+            color: #4a3319;
+        }
+
+        header {
+            background-color: #4a3b32;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-style: italic;
+            color: #dfbda3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .sobre {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .menu-titulo {
+            text-align: center;
+            border-bottom: 2px solid #4a3b32;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .cardapio {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid #8B5A2B;
+        }
+
+        .item h3 {
+            margin: 0 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .preco {
+            color: #8B5A2B;
+            font-weight: bold;
+        }
+
+        .item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer {
+            background-color: #4a3b32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        .botao-pedido {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 12px;
+            background-color: #8B5A2B;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .botao-pedido:hover {
+            background-color: #6d441f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>☕ Café Dev</h1>
+        <p>Transformando cafeína em linhas de código perfeitas.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Seção Sobre -->
+        <section class="sobre">
+            <h2>Bem-vindo ao nosso refúgio!</h2>
+            <p>O Café Dev é o espaço perfeito para quem precisa de foco, Wi-Fi rápido, mesas confortáveis e, claro, o melhor café torrado artesanalmente.</p>
+        </section>
+
+        <!-- Seção de Cardápio -->
+        <h2 class="menu-titulo">Nosso Cardápio</h2>
+        
+        <section class="cardapio">
+            
+            <div class="item">
+                <h3><span>Espresso Simples</span> <span class="preco">R$ 6,00</span></h3>
+                <p>Café preto forte e encorpado para iniciar o seu dia de trabalho.</p>
+            </div>
+
+            <div class="item">
+                <h3><span>Cappuccino Dev</span> <span class="preco">R$ 12,00</span></h3>
+                <p>Dose de espresso com leite vaporizado e um toque de canela.</p>
+            </div>
+
+            <div class="item">
+                <h3><span>Mocaccino</span> <span class="preco">R$ 14,00</span></h3>
+                <p>A combinação perfeita de calda de chocolate, espresso e leite vaporizado.</p>
+            </div>
+
+            <div class="item">
+                <h3><span>Bolo Red Velvet</span> <span class="preco">R$ 10,00</span></h3>
+                <p>Uma fatia fofinha com recheio leve de cream cheese para adoçar suas pausas.</p>
+            </div>
+
+        </section>
+
+        <!-- Botão de Ação -->
+        <button class="botao-pedido" onclick="alert('Pedido enviado para a cozinha! Seu café está sendo preparado. ☕')">Fazer um Pedido</button>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>📍 Rua dos Programadores, nº 101 - Bairro de Código | Aberto todos os dias das 08:00 às 22:00</p>
+    </footer>
+
+</body>
+</html>
